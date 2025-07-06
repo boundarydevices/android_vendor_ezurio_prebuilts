@@ -54,7 +54,7 @@ fastboot flash vbmeta_a $OUT/vbmeta.img $disable_verity
 if ! [ $? -eq 0 ] ; then echo "Failed to flash vbmeta"; exit 1; fi
 fastboot flash vbmeta_vendor_dlkm_a $OUT/vbmeta_vendor_dlkm.img $disable_verity
 if ! [ $? -eq 0 ] ; then echo "Failed to flash vbmeta_vendor_dlkm"; exit 1; fi
-fastboot flash super $OUT/super.img
+fastboot flash super $OUT/super_empty.img
 if ! [ $? -eq 0 ] ; then echo "Failed to flash super"; exit 1; fi
 if ! [ ${skip_userdata} -eq 1 ] ; then
 	fastboot erase userdata
@@ -64,4 +64,12 @@ if ! [ ${skip_userdata} -eq 1 ] ; then
 	fastboot erase misc
 	if ! [ $? -eq 0 ] ; then echo "Failed to erase misc"; exit 1; fi
 fi
+fastboot reboot fastboot
+fastboot wait-for-device
+fastboot flash system_a $OUT/system.img
+if ! [ $? -eq 0 ] ; then echo "Failed to flash system"; exit 1; fi
+fastboot flash vendor_a $OUT/vendor.img
+if ! [ $? -eq 0 ] ; then echo "Failed to flash vendor"; exit 1; fi
+fastboot flash vendor_dlkm_a $OUT/vendor_dlkm.img
+if ! [ $? -eq 0 ] ; then echo "Failed to flash vendor_dlkm"; exit 1; fi
 fastboot reboot
