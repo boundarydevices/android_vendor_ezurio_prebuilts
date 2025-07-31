@@ -7,7 +7,7 @@ Usage: $0 <options>
 
 options:
   -h                displays this help message
-  -d <directory>    the directory of images (default: \$OUT)
+  -d <directory>    the directory of images (default: \$ANDROID_PRODUCT_OUT)
   -D                disables verity verification
   -u                do NOT erase userdata during the flashing process
 
@@ -20,7 +20,7 @@ disable_verity=""
 while [ $# -gt 0 ]; do
 	case $1 in
 		-h) help; exit ;;
-		-d) OUT=$2; shift;;
+		-d) ANDROID_PRODUCT_OUT=$2; shift;;
 		-D) disable_verity="--disable-verity";;
 		-p) product=$2; shift;;
 		-u) skip_userdata=1 ;;
@@ -30,40 +30,20 @@ while [ $# -gt 0 ]; do
 	shift
 done
 
-if [ -z "$OUT" ]; then OUT=$PWD; fi
+if [ -z "$ANDROID_PRODUCT_OUT" ]; then ANDROID_PRODUCT_OUT=$PWD; fi
 
-fastboot flash mmc0 $OUT/MBR_EMMC
+fastboot flash mmc0 $ANDROID_PRODUCT_OUT/MBR_EMMC
 if ! [ $? -eq 0 ] ; then echo "Failed to flash GPT"; exit 1; fi
-fastboot flash mmc0boot0 $OUT/mtk-boot.bin
+fastboot flash mmc0boot0 $ANDROID_PRODUCT_OUT/mtk-boot.bin
 if ! [ $? -eq 0 ] ; then echo "Failed to flash BL2"; exit 1; fi
-fastboot flash mmc0boot1 $OUT/u-boot-env.bin
+fastboot flash mmc0boot1 $ANDROID_PRODUCT_OUT/u-boot-env.bin
 if ! [ $? -eq 0 ] ; then echo "Failed to flash uboot env"; exit 1; fi
-fastboot flash bootloaders $OUT/bootloaders.img
+fastboot flash bootloaders $ANDROID_PRODUCT_OUT/bootloaders.img
 if ! [ $? -eq 0 ] ; then echo "Failed to flash bootloaders"; exit 1; fi
-fastboot flash persist $OUT/persist.img
+fastboot flash persist $ANDROID_PRODUCT_OUT/persist.img
 if ! [ $? -eq 0 ] ; then echo "Failed to flash persist"; exit 1; fi
-fastboot flash boot_a $OUT/boot.img
-if ! [ $? -eq 0 ] ; then echo "Failed to flash boot"; exit 1; fi
-fastboot flash init_boot_a $OUT/init_boot.img
-if ! [ $? -eq 0 ] ; then echo "Failed to flash init_boot"; exit 1; fi
-fastboot flash vendor_boot_a $OUT/vendor_boot.img
-if ! [ $? -eq 0 ] ; then echo "Failed to flash vendor_boot"; exit 1; fi
-fastboot flash dtbo_a $OUT/dtbo.img
-if ! [ $? -eq 0 ] ; then echo "Failed to flash dtbo"; exit 1; fi
-fastboot flash vbmeta_a $OUT/vbmeta.img $disable_verity
-if ! [ $? -eq 0 ] ; then echo "Failed to flash vbmeta"; exit 1; fi
-fastboot flash vbmeta_vendor_dlkm_a $OUT/vbmeta_vendor_dlkm.img $disable_verity
-if ! [ $? -eq 0 ] ; then echo "Failed to flash vbmeta_vendor_dlkm"; exit 1; fi
-fastboot flash super $OUT/super_empty.img
-if ! [ $? -eq 0 ] ; then echo "Failed to flash super"; exit 1; fi
-fastboot reboot fastboot
-fastboot wait-for-device
-fastboot flash system_a $OUT/system.img
-if ! [ $? -eq 0 ] ; then echo "Failed to flash system"; exit 1; fi
-fastboot flash vendor_a $OUT/vendor.img
-if ! [ $? -eq 0 ] ; then echo "Failed to flash vendor"; exit 1; fi
-fastboot flash vendor_dlkm_a $OUT/vendor_dlkm.img
-if ! [ $? -eq 0 ] ; then echo "Failed to flash vendor_dlkm"; exit 1; fi
+fastboot flashall --force --skip-reboot $disable_verity
+if ! [ $? -eq 0 ] ; then echo "Failed to flash the OS, check your fastboot tool version!"; exit 1; fi
 if ! [ ${skip_userdata} -eq 1 ] ; then
 	fastboot reboot bootloader
 	fastboot erase userdata
