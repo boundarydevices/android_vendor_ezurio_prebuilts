@@ -20,7 +20,7 @@ disable_verity=""
 while [ $# -gt 0 ]; do
 	case $1 in
 		-h) help; exit ;;
-		-d) ANDROID_PRODUCT_OUT=$2; shift;;
+		-d) export ANDROID_PRODUCT_OUT=$2; shift;;
 		-D) disable_verity="--disable-verity";;
 		-p) product=$2; shift;;
 		-u) skip_userdata=1 ;;
@@ -30,7 +30,7 @@ while [ $# -gt 0 ]; do
 	shift
 done
 
-if [ -z "$ANDROID_PRODUCT_OUT" ]; then ANDROID_PRODUCT_OUT=$PWD; fi
+if [ -z "$ANDROID_PRODUCT_OUT" ]; then export ANDROID_PRODUCT_OUT=$PWD; fi
 
 fastboot flash mmc0 $ANDROID_PRODUCT_OUT/MBR_EMMC
 if ! [ $? -eq 0 ] ; then echo "Failed to flash GPT"; exit 1; fi
