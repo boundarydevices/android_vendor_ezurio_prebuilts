@@ -1,0 +1,2324 @@
+{
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "6.12.11-4k",
+    "documentNamespace": "https://www.google.com/sbom/spdx/android/kernel/6.12.11-4k",
+    "creationInfo": {
+        "creators": [
+            "Organization: Google"
+        ],
+        "created": "2026-01-12T15:24:33Z"
+    },
+    "documentDescribes": [
+        "SPDXRef-kernel"
+    ],
+    "packages": [
+        {
+            "name": "kernel",
+            "SPDXID": "SPDXRef-kernel",
+            "downloadLocation": "https://source.android.com",
+            "filesAnalyzed": true,
+            "versionInfo": "6.12.11-4k",
+            "supplier": "Organization: Google",
+            "hasFiles": [
+                "SPDXRef-6lowpan.ko",
+                "SPDXRef-8021q.ko",
+                "SPDXRef-9pnet-fd.ko",
+                "SPDXRef-9pnet.ko",
+                "SPDXRef-Image",
+                "SPDXRef-Image.gz",
+                "SPDXRef-Image.lz4",
+                "SPDXRef-System.map",
+                "SPDXRef-aqc111.ko",
+                "SPDXRef-asix.ko",
+                "SPDXRef-ax88179-178a.ko",
+                "SPDXRef-bluetooth.ko",
+                "SPDXRef-boot-gz.img",
+                "SPDXRef-boot-img.tar.gz",
+                "SPDXRef-boot-lz4.img",
+                "SPDXRef-boot.img",
+                "SPDXRef-bsd-comp.ko",
+                "SPDXRef-btbcm.ko",
+                "SPDXRef-btqca.ko",
+                "SPDXRef-btsdio.ko",
+                "SPDXRef-build.config.constants",
+                "SPDXRef-can-bcm.ko",
+                "SPDXRef-can-dev.ko",
+                "SPDXRef-can-gw.ko",
+                "SPDXRef-can-raw.ko",
+                "SPDXRef-can.ko",
+                "SPDXRef-cctrng.ko",
+                "SPDXRef-cdc-acm.ko",
+                "SPDXRef-cdc-eem.ko",
+                "SPDXRef-cdc-ether.ko",
+                "SPDXRef-cdc-ncm.ko",
+                "SPDXRef-clk-gate-test.ko",
+                "SPDXRef-clk-kunit-helpers.ko",
+                "SPDXRef-clk-test.ko",
+                "SPDXRef-dev-addr-lists-test.ko",
+                "SPDXRef-download-configs.json",
+                "SPDXRef-ext4-inode-test.ko",
+                "SPDXRef-fat-test.ko",
+                "SPDXRef-ftdi-sio.ko",
+                "SPDXRef-gki-certification-tools.tar.gz",
+                "SPDXRef-gki-info.txt",
+                "SPDXRef-gnss.ko",
+                "SPDXRef-gzvm.ko",
+                "SPDXRef-hci-uart.ko",
+                "SPDXRef-hid-uclogic-test.ko",
+                "SPDXRef-hidp.ko",
+                "SPDXRef-ieee802154-6lowpan.ko",
+                "SPDXRef-ieee802154-socket.ko",
+                "SPDXRef-ieee802154.ko",
+                "SPDXRef-iio-test-format.ko",
+                "SPDXRef-init-ddk.zip",
+                "SPDXRef-input-test.ko",
+                "SPDXRef-kernel-aarch64-Module.symvers",
+                "SPDXRef-kernel-aarch64-ddk-headers-archive.tar.gz",
+                "SPDXRef-kernel-aarch64-dot-config",
+                "SPDXRef-kernel-aarch64-filegroup-decl.tar.gz",
+                "SPDXRef-kernel-headers.tar.gz",
+                "SPDXRef-kernel-uapi-headers.tar.gz",
+                "SPDXRef-kheaders.ko",
+                "SPDXRef-kunit-example-test.ko",
+                "SPDXRef-kunit-test.ko",
+                "SPDXRef-kunit.ko",
+                "SPDXRef-l2tp-core.ko",
+                "SPDXRef-l2tp-ppp.ko",
+                "SPDXRef-lib-test.ko",
+                "SPDXRef-libarc4.ko",
+                "SPDXRef-mac802154.ko",
+                "SPDXRef-macsec.ko",
+                "SPDXRef-mii.ko",
+                "SPDXRef-modules.builtin",
+                "SPDXRef-modules.builtin.modinfo",
+                "SPDXRef-netfs.ko",
+                "SPDXRef-nfc.ko",
+                "SPDXRef-nhc-dest.ko",
+                "SPDXRef-nhc-fragment.ko",
+                "SPDXRef-nhc-hop.ko",
+                "SPDXRef-nhc-ipv6.ko",
+                "SPDXRef-nhc-mobility.ko",
+                "SPDXRef-nhc-routing.ko",
+                "SPDXRef-nhc-udp.ko",
+                "SPDXRef-of-kunit-helpers.ko",
+                "SPDXRef-open-dice.ko",
+                "SPDXRef-platform-test.ko",
+                "SPDXRef-ppp-deflate.ko",
+                "SPDXRef-ppp-generic.ko",
+                "SPDXRef-ppp-mppe.ko",
+                "SPDXRef-pppox.ko",
+                "SPDXRef-pps-core.ko",
+                "SPDXRef-pptp.ko",
+                "SPDXRef-ptp-kvm.ko",
+                "SPDXRef-ptp.ko",
+                "SPDXRef-pwrseq-core.ko",
+                "SPDXRef-r8152.ko",
+                "SPDXRef-r8153-ecm.ko",
+                "SPDXRef-regmap-kunit.ko",
+                "SPDXRef-regmap-ram.ko",
+                "SPDXRef-regmap-raw-ram.ko",
+                "SPDXRef-rfcomm.ko",
+                "SPDXRef-rfkill.ko",
+                "SPDXRef-rtl8150.ko",
+                "SPDXRef-slcan.ko",
+                "SPDXRef-slhc.ko",
+                "SPDXRef-soc-topology-test.ko",
+                "SPDXRef-soc-utils-test.ko",
+                "SPDXRef-system-dlkm-staging-archive.tar.gz",
+                "SPDXRef-system-dlkm.erofs.img",
+                "SPDXRef-system-dlkm.ext4.img",
+                "SPDXRef-system-dlkm.flatten.erofs.img",
+                "SPDXRef-system-dlkm.flatten.ext4.img",
+                "SPDXRef-system-dlkm.modules.blocklist",
+                "SPDXRef-system-dlkm.modules.load",
+                "SPDXRef-test-mappings.zip",
+                "SPDXRef-tests.zip",
+                "SPDXRef-time-test.ko",
+                "SPDXRef-tipc-diag.ko",
+                "SPDXRef-tipc.ko",
+                "SPDXRef-tls.ko",
+                "SPDXRef-unstripped-modules.tar.gz",
+                "SPDXRef-usbmon.ko",
+                "SPDXRef-usbnet.ko",
+                "SPDXRef-usbserial.ko",
+                "SPDXRef-vcan.ko",
+                "SPDXRef-vcpu-stall-detector.ko",
+                "SPDXRef-virtio-balloon.ko",
+                "SPDXRef-virtio-blk.ko",
+                "SPDXRef-virtio-console.ko",
+                "SPDXRef-virtio-pci-legacy-dev.ko",
+                "SPDXRef-virtio-pci-modern-dev.ko",
+                "SPDXRef-virtio-pci.ko",
+                "SPDXRef-vmlinux",
+                "SPDXRef-vmlinux.symvers",
+                "SPDXRef-vmw-vsock-virtio-transport.ko",
+                "SPDXRef-wwan.ko",
+                "SPDXRef-zram.ko",
+                "SPDXRef-zsmalloc.ko"
+            ],
+            "packageVerificationCode": {
+                "packageVerificationCodeValue": "4365db99c6f7b9a025df9aa4c1237a518f66c12d"
+            }
+        },
+        {
+            "name": "KernelSourceCode",
+            "SPDXID": "SPDXRef-KernelSourceCode",
+            "downloadLocation": "https://source.android.com",
+            "filesAnalyzed": false,
+            "versionInfo": "6.12.11-4k",
+            "supplier": "Organization: Google"
+        },
+        {
+            "name": "LinuxUpstreamPackage",
+            "SPDXID": "SPDXRef-LinuxUpstreamPackage",
+            "downloadLocation": "https://www.kernel.org",
+            "filesAnalyzed": false,
+            "versionInfo": "6.12.11",
+            "supplier": "Organization: The Linux Kernel Organization"
+        }
+    ],
+    "files": [
+        {
+            "fileName": "6lowpan.ko",
+            "SPDXID": "SPDXRef-6lowpan.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "77ef6ca0c81b868c9cbb39d86193eeda48df8415"
+                }
+            ],
+            "comment": "Build ID: 30d3a7255fc4d7f1c2c82de4282466e7b45c4056"
+        },
+        {
+            "fileName": "8021q.ko",
+            "SPDXID": "SPDXRef-8021q.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "e65226a2fd8f46e86b78fac1bb9dc0ed79a76789"
+                }
+            ],
+            "comment": "Build ID: 4464e64423cbcd1500b5b524a8e0272664b8e028"
+        },
+        {
+            "fileName": "9pnet_fd.ko",
+            "SPDXID": "SPDXRef-9pnet-fd.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "f48a3ca1dee30eac7387b531f3e049eeb2a2d955"
+                }
+            ],
+            "comment": "Build ID: 45d7e33a4d6b9628992884f96e7608c5335e97b5"
+        },
+        {
+            "fileName": "9pnet.ko",
+            "SPDXID": "SPDXRef-9pnet.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "2fa179b603e5620e9b77336210fd23ffc2ae4b14"
+                }
+            ],
+            "comment": "Build ID: dce467c59cba55e27867f84671b17d57454fd8fe"
+        },
+        {
+            "fileName": "Image",
+            "SPDXID": "SPDXRef-Image",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "dad1642fa8d62766912e6a8107322d5f6e3fb092"
+                }
+            ]
+        },
+        {
+            "fileName": "Image.gz",
+            "SPDXID": "SPDXRef-Image.gz",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "c8ae2c0ec66cccb9789990d832b5939c6c1e87a3"
+                }
+            ]
+        },
+        {
+            "fileName": "Image.lz4",
+            "SPDXID": "SPDXRef-Image.lz4",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ad750c1b18f16a5317b831103ae91514f60ac368"
+                }
+            ]
+        },
+        {
+            "fileName": "System.map",
+            "SPDXID": "SPDXRef-System.map",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "229292d5463b75c03afdb381905bfdf5762d4bcc"
+                }
+            ]
+        },
+        {
+            "fileName": "aqc111.ko",
+            "SPDXID": "SPDXRef-aqc111.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "a36bbcdecf7550f34895107cdfb128308b0c67b4"
+                }
+            ],
+            "comment": "Build ID: 8f26bedabfb55c748674f14616132406ba2cc9f1"
+        },
+        {
+            "fileName": "asix.ko",
+            "SPDXID": "SPDXRef-asix.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0d4018a653109150f88446114315de8ad7a35499"
+                }
+            ],
+            "comment": "Build ID: b0c8a71ea914a205a91a28aa621fa641ebf35aa6"
+        },
+        {
+            "fileName": "ax88179_178a.ko",
+            "SPDXID": "SPDXRef-ax88179-178a.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "5f5cd7dcb43c9abca9d6779db56b261e843ce7d0"
+                }
+            ],
+            "comment": "Build ID: d6cfe0ba9b8767557ca0ec43d11786216d98023d"
+        },
+        {
+            "fileName": "bluetooth.ko",
+            "SPDXID": "SPDXRef-bluetooth.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "971e8d14575736ed36bb9caa9960dee74ef613ac"
+                }
+            ],
+            "comment": "Build ID: 3e22bea085dbd3d52c1472fd447910d9ace83bb0"
+        },
+        {
+            "fileName": "boot-gz.img",
+            "SPDXID": "SPDXRef-boot-gz.img",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "541f9d7f338bbc83557c76fdf80b431af897be1d"
+                }
+            ]
+        },
+        {
+            "fileName": "boot-img.tar.gz",
+            "SPDXID": "SPDXRef-boot-img.tar.gz",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "b590b0b10d5d6c44f7308fda212db35cfe3a0f52"
+                }
+            ]
+        },
+        {
+            "fileName": "boot-lz4.img",
+            "SPDXID": "SPDXRef-boot-lz4.img",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "59fe81d76b3b4dc6f3d8ec7d6002f500af9b4ba1"
+                }
+            ]
+        },
+        {
+            "fileName": "boot.img",
+            "SPDXID": "SPDXRef-boot.img",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "624a79b860a3a885deb4cbec1bf9312e51628c1d"
+                }
+            ]
+        },
+        {
+            "fileName": "bsd_comp.ko",
+            "SPDXID": "SPDXRef-bsd-comp.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "7b88eb56facdfdea389ebb548ce6c44ff1f743a3"
+                }
+            ],
+            "comment": "Build ID: 2d512ae57b2fef2fd281a17ff6c4168abf4cee2b"
+        },
+        {
+            "fileName": "btbcm.ko",
+            "SPDXID": "SPDXRef-btbcm.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "a8ee360a1ad797b84b14d3d1ace7fdff839776a6"
+                }
+            ],
+            "comment": "Build ID: a445b1c3751e6d2333c2bb97804cd0a8455684e4"
+        },
+        {
+            "fileName": "btqca.ko",
+            "SPDXID": "SPDXRef-btqca.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "fbeb318ab84982c6d1e7c888f7829d5f96b0dcb9"
+                }
+            ],
+            "comment": "Build ID: 6c715701146a3f1905df14d04319b68fdfc78280"
+        },
+        {
+            "fileName": "btsdio.ko",
+            "SPDXID": "SPDXRef-btsdio.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "4da3571ee947cf1cd63f7a46e4e38f94e131651c"
+                }
+            ],
+            "comment": "Build ID: 32216ddfde3f722e776bd35edddbb87c1df4cfb2"
+        },
+        {
+            "fileName": "build.config.constants",
+            "SPDXID": "SPDXRef-build.config.constants",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "fc7674bee495a489c4fc0128791b4ea35bd30ad8"
+                }
+            ]
+        },
+        {
+            "fileName": "can-bcm.ko",
+            "SPDXID": "SPDXRef-can-bcm.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "172bd95059b04a1b2fdd37b1b8d7dc047d9c6a46"
+                }
+            ],
+            "comment": "Build ID: eeca704ad5b3c39aac87202d1cfeec37aad894a5"
+        },
+        {
+            "fileName": "can-dev.ko",
+            "SPDXID": "SPDXRef-can-dev.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "161c0a660d4c0fcf637508a83456c4371ccefc3d"
+                }
+            ],
+            "comment": "Build ID: 6f86a9f848abc68cafd5ac372bffd32e42cf2757"
+        },
+        {
+            "fileName": "can-gw.ko",
+            "SPDXID": "SPDXRef-can-gw.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "cef16957821931d5cab6261d6961cb00d47c8718"
+                }
+            ],
+            "comment": "Build ID: 8d3b663653db48bf6c2ea53bdc4c7b2021ae2e77"
+        },
+        {
+            "fileName": "can-raw.ko",
+            "SPDXID": "SPDXRef-can-raw.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "651cb33285ba3694fe6bc97910dce476ebdbb4b8"
+                }
+            ],
+            "comment": "Build ID: 834ba2025bd5f9316c961631835da339cedbda6e"
+        },
+        {
+            "fileName": "can.ko",
+            "SPDXID": "SPDXRef-can.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "17c8565bdb460bfbd8d4983b25cce5f51d53fde4"
+                }
+            ],
+            "comment": "Build ID: 3a91212a9a43eda8ee80eb1c699aaff22aa95233"
+        },
+        {
+            "fileName": "cctrng.ko",
+            "SPDXID": "SPDXRef-cctrng.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "54f7be5830bbbc459b323ec32f31b8904244d4e3"
+                }
+            ],
+            "comment": "Build ID: 587f697e504b43099f8b138fe8d78fd11aff33bd"
+        },
+        {
+            "fileName": "cdc-acm.ko",
+            "SPDXID": "SPDXRef-cdc-acm.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "a2da3e1d2101d80352b619f732350593aede851b"
+                }
+            ],
+            "comment": "Build ID: f22099a01164511781257abe12ab2858948e8f1b"
+        },
+        {
+            "fileName": "cdc_eem.ko",
+            "SPDXID": "SPDXRef-cdc-eem.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "029043d73f7f3d33e05e46b46c614b9f958fd2ef"
+                }
+            ],
+            "comment": "Build ID: 37dd079d301ea186879b1b4ca300d825f87056ff"
+        },
+        {
+            "fileName": "cdc_ether.ko",
+            "SPDXID": "SPDXRef-cdc-ether.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "2e216f17e3c39fde6967ed6a0ae6cbe3183faf6a"
+                }
+            ],
+            "comment": "Build ID: a39126751fdc4faffecf7183fbdcc1095c0524f8"
+        },
+        {
+            "fileName": "cdc_ncm.ko",
+            "SPDXID": "SPDXRef-cdc-ncm.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "3d3208f2d9a0793273b428708c2975502bf22290"
+                }
+            ],
+            "comment": "Build ID: 8828e3cd547662ded09a008aa5716e3c3305c4d9"
+        },
+        {
+            "fileName": "clk-gate_test.ko",
+            "SPDXID": "SPDXRef-clk-gate-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "820633421f9e68767ea2122e4ca68338fac0b720"
+                }
+            ],
+            "comment": "Build ID: cc2dfaef57ae8f4e50ec2e1035163b9cd9651fe7"
+        },
+        {
+            "fileName": "clk_kunit_helpers.ko",
+            "SPDXID": "SPDXRef-clk-kunit-helpers.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "aca50aaeb938b8c4c83feb7b4585be6e75f6a289"
+                }
+            ],
+            "comment": "Build ID: b93396529782955e73c0c1ac74912fd092ab1cef"
+        },
+        {
+            "fileName": "clk-test.ko",
+            "SPDXID": "SPDXRef-clk-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "df2dbeea18212f0e6da85e14ea984cfd6b3c6b4d"
+                }
+            ],
+            "comment": "Build ID: 4ede896c59495a26e1bae0e6594d78f99bf8f6fb"
+        },
+        {
+            "fileName": "dev_addr_lists_test.ko",
+            "SPDXID": "SPDXRef-dev-addr-lists-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ebaa243cd82c0daa117b48ca33f026d36c13bebc"
+                }
+            ],
+            "comment": "Build ID: 8938ce0bcdc9bed4ef58037a0d8e354fb99a28ac"
+        },
+        {
+            "fileName": "download_configs.json",
+            "SPDXID": "SPDXRef-download-configs.json",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "e99334ebe237d463d9863318249d86c9d50ed41d"
+                }
+            ]
+        },
+        {
+            "fileName": "ext4-inode-test.ko",
+            "SPDXID": "SPDXRef-ext4-inode-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "2bfd03cb6c8f92a0b822a4b3dcefc19e64dd57be"
+                }
+            ],
+            "comment": "Build ID: 3447209cfa7336e1448455ac68dbe1c847c76e23"
+        },
+        {
+            "fileName": "fat_test.ko",
+            "SPDXID": "SPDXRef-fat-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "343f573d5e4d2333077f64e1a6f6bb62f47990aa"
+                }
+            ],
+            "comment": "Build ID: f56869f1fe45ea619f8ddcf3ff2822e36cd0749c"
+        },
+        {
+            "fileName": "ftdi_sio.ko",
+            "SPDXID": "SPDXRef-ftdi-sio.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "6c63acd546749f6deb84454c63b6f301c2f50381"
+                }
+            ],
+            "comment": "Build ID: 799b4c0093438f6991cd300112e097ff8a258c23"
+        },
+        {
+            "fileName": "gki_certification_tools.tar.gz",
+            "SPDXID": "SPDXRef-gki-certification-tools.tar.gz",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "93151db3c2fcdf8b150776aadaf747f84e70b25b"
+                }
+            ]
+        },
+        {
+            "fileName": "gki-info.txt",
+            "SPDXID": "SPDXRef-gki-info.txt",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "594b7a55a5abddedb6f839f0a630e26fe2401ee3"
+                }
+            ]
+        },
+        {
+            "fileName": "gnss.ko",
+            "SPDXID": "SPDXRef-gnss.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "52e7a15ddda5dfcede87c1b1e3c71abcd548fff8"
+                }
+            ],
+            "comment": "Build ID: 503f30273b72cc12e185b73904df1b904883ce2e"
+        },
+        {
+            "fileName": "gzvm.ko",
+            "SPDXID": "SPDXRef-gzvm.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "6acba209def49d6fb92cee24df220fe71539164d"
+                }
+            ],
+            "comment": "Build ID: 5ef25e0376e2dcb56b819794c7da1a0cc210029d"
+        },
+        {
+            "fileName": "hci_uart.ko",
+            "SPDXID": "SPDXRef-hci-uart.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ab3669c71157e391c041860b306a1491cc7de9de"
+                }
+            ],
+            "comment": "Build ID: 6b0bee020d7d52c7b0a683c70eb01fcd9bcf551b"
+        },
+        {
+            "fileName": "hid-uclogic-test.ko",
+            "SPDXID": "SPDXRef-hid-uclogic-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "f9956a9f9cd0f931a9a13782b5e2e60031e99fb1"
+                }
+            ],
+            "comment": "Build ID: 69532ed33133cc43055a4b60f79761a52f86f513"
+        },
+        {
+            "fileName": "hidp.ko",
+            "SPDXID": "SPDXRef-hidp.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "301e21218d8b4de6dde95a4068f3bce309a09f6b"
+                }
+            ],
+            "comment": "Build ID: a319ba78be54d766cb8076571979a8c0fe8aec1c"
+        },
+        {
+            "fileName": "ieee802154_6lowpan.ko",
+            "SPDXID": "SPDXRef-ieee802154-6lowpan.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "9d0d04b8347616825e9ba4287e5fa86757879a42"
+                }
+            ],
+            "comment": "Build ID: 159803dc595ec5eca130c6cba14dc6648415992c"
+        },
+        {
+            "fileName": "ieee802154_socket.ko",
+            "SPDXID": "SPDXRef-ieee802154-socket.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "398837aadfcb0044381dc3a270f4c31ea67d43cb"
+                }
+            ],
+            "comment": "Build ID: 615572e2e40f728ee035a5b57c4cdf105139c201"
+        },
+        {
+            "fileName": "ieee802154.ko",
+            "SPDXID": "SPDXRef-ieee802154.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "21e4d826078454f4d311ad89b7befa776c29bb29"
+                }
+            ],
+            "comment": "Build ID: 7603d9ee24e89d1514b65b7dd4ca7e3bdd727ec1"
+        },
+        {
+            "fileName": "iio-test-format.ko",
+            "SPDXID": "SPDXRef-iio-test-format.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "b42d5406f61eccac37aa6195a082c2199e4a4aff"
+                }
+            ],
+            "comment": "Build ID: fde9b748c3996b596a58ace0e36e55344e10662f"
+        },
+        {
+            "fileName": "init_ddk.zip",
+            "SPDXID": "SPDXRef-init-ddk.zip",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "c649b7d073daacbb22ff779a63858d519607a936"
+                }
+            ]
+        },
+        {
+            "fileName": "input_test.ko",
+            "SPDXID": "SPDXRef-input-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "6dd67598a8816cdf12147579b223493aaf4eb446"
+                }
+            ],
+            "comment": "Build ID: 4761cebb08ce5d5e016f31f0c888cb1fd1e21883"
+        },
+        {
+            "fileName": "kernel_aarch64_Module.symvers",
+            "SPDXID": "SPDXRef-kernel-aarch64-Module.symvers",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1be0e06f2e42f32a04cb8dc7f861987172b7d582"
+                }
+            ]
+        },
+        {
+            "fileName": "kernel_aarch64_ddk_headers_archive.tar.gz",
+            "SPDXID": "SPDXRef-kernel-aarch64-ddk-headers-archive.tar.gz",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "54205c9a176976982b22680e5feb1073ae9bb899"
+                }
+            ]
+        },
+        {
+            "fileName": "kernel_aarch64_dot_config",
+            "SPDXID": "SPDXRef-kernel-aarch64-dot-config",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "5088e7047606341e1962ed235269543aadaaa577"
+                }
+            ]
+        },
+        {
+            "fileName": "kernel_aarch64_filegroup_decl.tar.gz",
+            "SPDXID": "SPDXRef-kernel-aarch64-filegroup-decl.tar.gz",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "6ebe13d0393978483cf7ff6c622038de4b284078"
+                }
+            ]
+        },
+        {
+            "fileName": "kernel-headers.tar.gz",
+            "SPDXID": "SPDXRef-kernel-headers.tar.gz",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "7255cda3289bd3fff51369c50f62e16f96a0ca8e"
+                }
+            ]
+        },
+        {
+            "fileName": "kernel-uapi-headers.tar.gz",
+            "SPDXID": "SPDXRef-kernel-uapi-headers.tar.gz",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "8f3aa2a654a3e79cace8a57a98792e9375d0710d"
+                }
+            ]
+        },
+        {
+            "fileName": "kheaders.ko",
+            "SPDXID": "SPDXRef-kheaders.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "160e04cc6105f9827c1be410e4f43c093322f2db"
+                }
+            ],
+            "comment": "Build ID: b32de52bf6186f5f533e3bf08c2469d9551f40db"
+        },
+        {
+            "fileName": "kunit-example-test.ko",
+            "SPDXID": "SPDXRef-kunit-example-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "bd12f6ee44bd58a744bb8e82e593890fcb054d68"
+                }
+            ],
+            "comment": "Build ID: 72069975ad68d26491b368be03c757020e21db16"
+        },
+        {
+            "fileName": "kunit-test.ko",
+            "SPDXID": "SPDXRef-kunit-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "19ca292594afc14b471df24eff5e0c86c409e9c5"
+                }
+            ],
+            "comment": "Build ID: 87d244ae2b757510c20457c59e00733e6fae589a"
+        },
+        {
+            "fileName": "kunit.ko",
+            "SPDXID": "SPDXRef-kunit.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0ef17bd1a0999abf0cd2e850c874c1e0ab60dc03"
+                }
+            ],
+            "comment": "Build ID: 380b19a9d1cd21556f0744a33b1ab9821c1dc6a8"
+        },
+        {
+            "fileName": "l2tp_core.ko",
+            "SPDXID": "SPDXRef-l2tp-core.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "e4293076577c2a2f6231082e75e36d61564b5502"
+                }
+            ],
+            "comment": "Build ID: a49e45cff3f1dfd0710084d5208a9dee83507ddc"
+        },
+        {
+            "fileName": "l2tp_ppp.ko",
+            "SPDXID": "SPDXRef-l2tp-ppp.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "d68305684fef18b309f21e63f9de00ce30c496ff"
+                }
+            ],
+            "comment": "Build ID: 72782d0bf60eaa7eb9992eefda20095a57183a71"
+        },
+        {
+            "fileName": "lib_test.ko",
+            "SPDXID": "SPDXRef-lib-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "a9851c548b2bd50b07f2207fb63930104f18af98"
+                }
+            ],
+            "comment": "Build ID: 7ff4fa3032234583241b02797756b89489d85b1a"
+        },
+        {
+            "fileName": "libarc4.ko",
+            "SPDXID": "SPDXRef-libarc4.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "eb5c16d73106db26275f06b6d47feabfb6441664"
+                }
+            ],
+            "comment": "Build ID: 0f1f2356604f33f810261505b3f80f8295c4c518"
+        },
+        {
+            "fileName": "mac802154.ko",
+            "SPDXID": "SPDXRef-mac802154.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1341f97b614d95bf525f80384c9e7318f597e537"
+                }
+            ],
+            "comment": "Build ID: db20b1295e3b5ed755b0842f41010a216907817d"
+        },
+        {
+            "fileName": "macsec.ko",
+            "SPDXID": "SPDXRef-macsec.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "aeb6c4b43a907a2add59c9352fa94b91d80efa80"
+                }
+            ],
+            "comment": "Build ID: 593440ff4b27e865f6e78ae9d713bd6efe1b7b00"
+        },
+        {
+            "fileName": "mii.ko",
+            "SPDXID": "SPDXRef-mii.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "8b6cec5d75c865539975e474ea8199cbfb308906"
+                }
+            ],
+            "comment": "Build ID: 956e8fd65ea677a156cf0c0c925b9cc10f198150"
+        },
+        {
+            "fileName": "modules.builtin",
+            "SPDXID": "SPDXRef-modules.builtin",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "a584947cd2207305a91aa74e3498b1b464bef11d"
+                }
+            ]
+        },
+        {
+            "fileName": "modules.builtin.modinfo",
+            "SPDXID": "SPDXRef-modules.builtin.modinfo",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "43d239f3a22df962681a4d72cfd35601bb0ebde1"
+                }
+            ]
+        },
+        {
+            "fileName": "netfs.ko",
+            "SPDXID": "SPDXRef-netfs.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "4c4e2fdfb66b63e280fc1017d2277c2cf588c04a"
+                }
+            ],
+            "comment": "Build ID: ccea4d0661adf4f8e63ecdb1fe7d0c1380694cbc"
+        },
+        {
+            "fileName": "nfc.ko",
+            "SPDXID": "SPDXRef-nfc.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1b2d2c363a33da594be3d1ed2d2306c0c76c7a38"
+                }
+            ],
+            "comment": "Build ID: 28b0aea8c9ed24ad979dc6f1a97a69e213ed561f"
+        },
+        {
+            "fileName": "nhc_dest.ko",
+            "SPDXID": "SPDXRef-nhc-dest.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "672a8a15fcdecf42c3d1774522fa753c827f718d"
+                }
+            ],
+            "comment": "Build ID: b6d6acb3ec682df5f58402439b6e952fee34bce8"
+        },
+        {
+            "fileName": "nhc_fragment.ko",
+            "SPDXID": "SPDXRef-nhc-fragment.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "4b2d35f1b7aeeb3fa2d3ee49e8b6e460f4e98291"
+                }
+            ],
+            "comment": "Build ID: 75725f808f23cfb572559d1d8705f3d1012a1a8f"
+        },
+        {
+            "fileName": "nhc_hop.ko",
+            "SPDXID": "SPDXRef-nhc-hop.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "5ecdf040bd3bbb88c7bd58a5b8044244eccd6a2f"
+                }
+            ],
+            "comment": "Build ID: 1a8545785ea77f07acf7a2e4c427cf8bd993b1da"
+        },
+        {
+            "fileName": "nhc_ipv6.ko",
+            "SPDXID": "SPDXRef-nhc-ipv6.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "e0354c9fc071ec662cc404ac33325116e1f9732d"
+                }
+            ],
+            "comment": "Build ID: f36a609eb3856a98d0ab20cd986653a800c33254"
+        },
+        {
+            "fileName": "nhc_mobility.ko",
+            "SPDXID": "SPDXRef-nhc-mobility.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "a53374ab0a296bdb1dfb1175992c5778473390d7"
+                }
+            ],
+            "comment": "Build ID: 1c87102db4184ec0470a8b3755f9a5e031160ada"
+        },
+        {
+            "fileName": "nhc_routing.ko",
+            "SPDXID": "SPDXRef-nhc-routing.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1073dab4275abc5736162af0bfaf3cc12a24d70c"
+                }
+            ],
+            "comment": "Build ID: b24485ac684190c894d816191889111a51731174"
+        },
+        {
+            "fileName": "nhc_udp.ko",
+            "SPDXID": "SPDXRef-nhc-udp.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "8c904d94463207d4bdf1fac46d910e7d8538c335"
+                }
+            ],
+            "comment": "Build ID: 0b6d660354d4f112e072e597f646e5cf8e297e54"
+        },
+        {
+            "fileName": "of_kunit_helpers.ko",
+            "SPDXID": "SPDXRef-of-kunit-helpers.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "afaae96e1fc95a2c779a2491f5c1ce603ef99a24"
+                }
+            ],
+            "comment": "Build ID: b4d6a8edf325d2fccd1600bdc52561cb0b6075e0"
+        },
+        {
+            "fileName": "open-dice.ko",
+            "SPDXID": "SPDXRef-open-dice.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "bc9fcd793c0bfd1fd87a8d80dbd29ced2ca4913a"
+                }
+            ],
+            "comment": "Build ID: 9a88871d85e51070a9fdde89763fd702af33889d"
+        },
+        {
+            "fileName": "platform-test.ko",
+            "SPDXID": "SPDXRef-platform-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "8cda13efe7974773ed18853aeac7ba1e0578849b"
+                }
+            ],
+            "comment": "Build ID: 102751da195ffdcf6d47daccfacb2805529cd324"
+        },
+        {
+            "fileName": "ppp_deflate.ko",
+            "SPDXID": "SPDXRef-ppp-deflate.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "a0faa281400315e7b4c4ced7a80056875e09e5fa"
+                }
+            ],
+            "comment": "Build ID: 0ba776ce5f429d7f1a7a23bbd9ac1dae7b99672d"
+        },
+        {
+            "fileName": "ppp_generic.ko",
+            "SPDXID": "SPDXRef-ppp-generic.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ab650fb5e243a7c8900f01c1448895c7f78aaf56"
+                }
+            ],
+            "comment": "Build ID: 96786c950589991b9d4ef3238120de8f76019002"
+        },
+        {
+            "fileName": "ppp_mppe.ko",
+            "SPDXID": "SPDXRef-ppp-mppe.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "52d672cb4840e022c5806137695931dda0e32eab"
+                }
+            ],
+            "comment": "Build ID: cc5cbc0f89fdeab400928f737cc3bc8078a899df"
+        },
+        {
+            "fileName": "pppox.ko",
+            "SPDXID": "SPDXRef-pppox.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1e757a53c7a808b664909925cceb23fedbabbac6"
+                }
+            ],
+            "comment": "Build ID: e889427dab7ac1dd8aa99ccd2d1c6b9a4b8efa75"
+        },
+        {
+            "fileName": "pps_core.ko",
+            "SPDXID": "SPDXRef-pps-core.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0e26c721e7fab134898fffed7a7f0d65924fbf62"
+                }
+            ],
+            "comment": "Build ID: a68a871e006e3bda8f4f1c4491280a609b564eb3"
+        },
+        {
+            "fileName": "pptp.ko",
+            "SPDXID": "SPDXRef-pptp.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "2fb69b3aaa4c4aed427be4edd4b69c4c136ae114"
+                }
+            ],
+            "comment": "Build ID: 2dd38e52fe0a7a6c9615c758fa7109f303a63e01"
+        },
+        {
+            "fileName": "ptp_kvm.ko",
+            "SPDXID": "SPDXRef-ptp-kvm.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "a989a200bea0764a9f27a498a356f56edabdc5c9"
+                }
+            ],
+            "comment": "Build ID: daf1389dc6e6171b9c3f5d34c4391481648314b6"
+        },
+        {
+            "fileName": "ptp.ko",
+            "SPDXID": "SPDXRef-ptp.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "f1b2df808900eb636a7759f6d66dcce2ad076004"
+                }
+            ],
+            "comment": "Build ID: 6e5911b1de992dec2e7e3d1c1eabc28a1db42afc"
+        },
+        {
+            "fileName": "pwrseq-core.ko",
+            "SPDXID": "SPDXRef-pwrseq-core.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "d265ccf3d835cb414eeac8ae66a5fc5cd2b027af"
+                }
+            ],
+            "comment": "Build ID: 08384d9f38611da47f7f0259a179176d8c98e931"
+        },
+        {
+            "fileName": "r8152.ko",
+            "SPDXID": "SPDXRef-r8152.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "f287490b44cc43ad9ac517ddfc93d69b0aa43fc4"
+                }
+            ],
+            "comment": "Build ID: 214eb208573ea2fbb9927cef56258d73b062a5a6"
+        },
+        {
+            "fileName": "r8153_ecm.ko",
+            "SPDXID": "SPDXRef-r8153-ecm.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "21f6125c9d0736e31f2e23d8ceef18edee1acfd4"
+                }
+            ],
+            "comment": "Build ID: f829815d2d34728f699bac9da2033f55a5c2bd29"
+        },
+        {
+            "fileName": "regmap-kunit.ko",
+            "SPDXID": "SPDXRef-regmap-kunit.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "395e679b57bc15538c3b2eb6908d5f632a5e17a6"
+                }
+            ],
+            "comment": "Build ID: 19dd56bbf77df8f0ede5bc02ee494eb6911873ae"
+        },
+        {
+            "fileName": "regmap-ram.ko",
+            "SPDXID": "SPDXRef-regmap-ram.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ce2fefa633ad43eba0d6dffe78a93bb8be02aeca"
+                }
+            ],
+            "comment": "Build ID: aab66b73b9cc2534fb8c11bae7cd2598885335d5"
+        },
+        {
+            "fileName": "regmap-raw-ram.ko",
+            "SPDXID": "SPDXRef-regmap-raw-ram.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1c920404594105eefcaf539dc1e89e00452b8c38"
+                }
+            ],
+            "comment": "Build ID: 2204bc2aa951f25bce205e52da3dcfbc6b871042"
+        },
+        {
+            "fileName": "rfcomm.ko",
+            "SPDXID": "SPDXRef-rfcomm.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "66b8fc33f79bb0dd8640a04141621114d030da4a"
+                }
+            ],
+            "comment": "Build ID: 3504798e231b700e36c315b2ce661b3b0e094899"
+        },
+        {
+            "fileName": "rfkill.ko",
+            "SPDXID": "SPDXRef-rfkill.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "60628dd60c0819a8e66b345ee3049fceba2d18d3"
+                }
+            ],
+            "comment": "Build ID: 78378e5b0d9f6fc5995e9fe56b3656d51c93d149"
+        },
+        {
+            "fileName": "rtl8150.ko",
+            "SPDXID": "SPDXRef-rtl8150.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "228ff4a3c19f7f754eba28a1ec6751bcbb41126c"
+                }
+            ],
+            "comment": "Build ID: 1cc1fbf144affa2d8a2442ce79169ea3f7759ffd"
+        },
+        {
+            "fileName": "slcan.ko",
+            "SPDXID": "SPDXRef-slcan.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "b9cf16ae9293329091f20c87b8c48bdc3e754fac"
+                }
+            ],
+            "comment": "Build ID: 5a51cf3aa2e58fc59d543b848d259af20d2f61c1"
+        },
+        {
+            "fileName": "slhc.ko",
+            "SPDXID": "SPDXRef-slhc.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "2a6c6ebc6fef017d04455ee317197b71e1cb329f"
+                }
+            ],
+            "comment": "Build ID: 0348b010a56d9eb0ba601b6228131b1836124e01"
+        },
+        {
+            "fileName": "soc-topology-test.ko",
+            "SPDXID": "SPDXRef-soc-topology-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "7fc5e85e1286ea206f1bf675ecf4baeca7b19cd6"
+                }
+            ],
+            "comment": "Build ID: a219686d0482713f42522733919253aded19536b"
+        },
+        {
+            "fileName": "soc-utils-test.ko",
+            "SPDXID": "SPDXRef-soc-utils-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "564a1e880e36fb49995b705e8b75d9a3eb4b4568"
+                }
+            ],
+            "comment": "Build ID: 0c17ca0620b858066ea4c8d91d4336b3555e590c"
+        },
+        {
+            "fileName": "system_dlkm_staging_archive.tar.gz",
+            "SPDXID": "SPDXRef-system-dlkm-staging-archive.tar.gz",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "754047d22426fc9b3aca308772e17fb3045f0d6c"
+                }
+            ]
+        },
+        {
+            "fileName": "system_dlkm.erofs.img",
+            "SPDXID": "SPDXRef-system-dlkm.erofs.img",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "75bebe68bd3f934b712e2d7932830dc1fbdb0ff6"
+                }
+            ]
+        },
+        {
+            "fileName": "system_dlkm.ext4.img",
+            "SPDXID": "SPDXRef-system-dlkm.ext4.img",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "5b7be9c458215a0b83dbd53e4f0d1d4692115afa"
+                }
+            ]
+        },
+        {
+            "fileName": "system_dlkm.flatten.erofs.img",
+            "SPDXID": "SPDXRef-system-dlkm.flatten.erofs.img",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "cc6be589e143db4c8c180cbd5d44d8329bc1569c"
+                }
+            ]
+        },
+        {
+            "fileName": "system_dlkm.flatten.ext4.img",
+            "SPDXID": "SPDXRef-system-dlkm.flatten.ext4.img",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "8e2db58486409209b3531b58f03702adcce2dea0"
+                }
+            ]
+        },
+        {
+            "fileName": "system_dlkm.modules.blocklist",
+            "SPDXID": "SPDXRef-system-dlkm.modules.blocklist",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+                }
+            ]
+        },
+        {
+            "fileName": "system_dlkm.modules.load",
+            "SPDXID": "SPDXRef-system-dlkm.modules.load",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "4aa7446c6aa1bc75879ce46b075658176aed98dd"
+                }
+            ]
+        },
+        {
+            "fileName": "test_mappings.zip",
+            "SPDXID": "SPDXRef-test-mappings.zip",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "cf94391873c022b3b761161d64a25bc6724be4e6"
+                }
+            ]
+        },
+        {
+            "fileName": "tests.zip",
+            "SPDXID": "SPDXRef-tests.zip",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "6250177caf4a1ca8178166a07fbbff953a6092d8"
+                }
+            ]
+        },
+        {
+            "fileName": "time_test.ko",
+            "SPDXID": "SPDXRef-time-test.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1b2d42176439251db1509111171b22df8d56ce30"
+                }
+            ],
+            "comment": "Build ID: f87caa71dfbcd324cb8d13d25cce89057475d54a"
+        },
+        {
+            "fileName": "tipc_diag.ko",
+            "SPDXID": "SPDXRef-tipc-diag.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "7500bf455a2522f9ec1765aadb6a0ecc73d93517"
+                }
+            ],
+            "comment": "Build ID: 15ac3d47835cfff296024d5031071778dd6db465"
+        },
+        {
+            "fileName": "tipc.ko",
+            "SPDXID": "SPDXRef-tipc.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "c00936783a0034ad8b41ce7778099306540ce8b8"
+                }
+            ],
+            "comment": "Build ID: a094cc3e5c99db411cfd6a7b179e4d59d472cb8e"
+        },
+        {
+            "fileName": "tls.ko",
+            "SPDXID": "SPDXRef-tls.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "e8c758f6d5cc62a23757ae29d8f8e5f3d904af27"
+                }
+            ],
+            "comment": "Build ID: 9a613377b1c2234dd3ceb29df1d24cbe6d6e4f7e"
+        },
+        {
+            "fileName": "unstripped_modules.tar.gz",
+            "SPDXID": "SPDXRef-unstripped-modules.tar.gz",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "1802df30cee065ce5ac4f1b94e7229ca687a6678"
+                }
+            ]
+        },
+        {
+            "fileName": "usbmon.ko",
+            "SPDXID": "SPDXRef-usbmon.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "42f32bbe54f50d685f827a70df5522d598d442c4"
+                }
+            ],
+            "comment": "Build ID: 56047f5bd211bc556c4550c85c06ef26c45dbb12"
+        },
+        {
+            "fileName": "usbnet.ko",
+            "SPDXID": "SPDXRef-usbnet.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "bc4a4d60470c0a3fa768709ccb2ba47faab6727e"
+                }
+            ],
+            "comment": "Build ID: 822e054bf8bf573207bc8c4e88fe2e0695d68447"
+        },
+        {
+            "fileName": "usbserial.ko",
+            "SPDXID": "SPDXRef-usbserial.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "cd1876ad8dec1f6abde932267775783ddb752cfa"
+                }
+            ],
+            "comment": "Build ID: 0ff9a10841c987dd30cde5c5963715cd9232b074"
+        },
+        {
+            "fileName": "vcan.ko",
+            "SPDXID": "SPDXRef-vcan.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "ce636d9e021aa8671fac2edf93cfa9d765f3c90a"
+                }
+            ],
+            "comment": "Build ID: 9005bf4f41851e02eeb7d3ae8bff83dda21d74e5"
+        },
+        {
+            "fileName": "vcpu_stall_detector.ko",
+            "SPDXID": "SPDXRef-vcpu-stall-detector.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "0b3ee643e9eb834ba0d5ef717d8f975617eeffbb"
+                }
+            ],
+            "comment": "Build ID: 68347cda20bc7db8809252c7eee5fbb8961dbd28"
+        },
+        {
+            "fileName": "virtio_balloon.ko",
+            "SPDXID": "SPDXRef-virtio-balloon.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "d64a123dc21932b8ad865e9bd692091025578feb"
+                }
+            ],
+            "comment": "Build ID: 70b8737a46a699f3e18588825fdb405860932f7d"
+        },
+        {
+            "fileName": "virtio_blk.ko",
+            "SPDXID": "SPDXRef-virtio-blk.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "71c94d0a4a604e8de803d0b3eebb986999543dcc"
+                }
+            ],
+            "comment": "Build ID: e0ef80c343ea8b3a9c3abeefd4c9e34783beaada"
+        },
+        {
+            "fileName": "virtio_console.ko",
+            "SPDXID": "SPDXRef-virtio-console.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "8b630ebee557c9a95029ab4712564ef9261dda8f"
+                }
+            ],
+            "comment": "Build ID: 3be3e21ec10a2612f67d08ca89d9a1ce63aab720"
+        },
+        {
+            "fileName": "virtio_pci_legacy_dev.ko",
+            "SPDXID": "SPDXRef-virtio-pci-legacy-dev.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "d30bab5abf7ba467b254db42561fdcbe46d1f65e"
+                }
+            ],
+            "comment": "Build ID: 7eb67e60140b91d9c30353f209ab4f02d1f16f79"
+        },
+        {
+            "fileName": "virtio_pci_modern_dev.ko",
+            "SPDXID": "SPDXRef-virtio-pci-modern-dev.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "bdd5354b9260a0f7e09c431dd0f6a124cf1794e4"
+                }
+            ],
+            "comment": "Build ID: 342dbdb069769c9503c68849474d555108886ac7"
+        },
+        {
+            "fileName": "virtio_pci.ko",
+            "SPDXID": "SPDXRef-virtio-pci.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "c157a73de5907cb98b4f15c91568e61a5bc2837e"
+                }
+            ],
+            "comment": "Build ID: 44336397f43c65b8724f3b2697d907e59b374c17"
+        },
+        {
+            "fileName": "vmlinux",
+            "SPDXID": "SPDXRef-vmlinux",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "d2751c2eb62ea9a70b634ef582688afb6d8060b4"
+                }
+            ],
+            "comment": "Build ID: 89fa51ead4741c33d4e9f717e3a0334f3ca01da1"
+        },
+        {
+            "fileName": "vmlinux.symvers",
+            "SPDXID": "SPDXRef-vmlinux.symvers",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "c436553e47e3b0dc4a6498796585fe9981ef8f67"
+                }
+            ]
+        },
+        {
+            "fileName": "vmw_vsock_virtio_transport.ko",
+            "SPDXID": "SPDXRef-vmw-vsock-virtio-transport.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "eebd12c9d3e4efbb335490b86cf054d0ed8e5bcc"
+                }
+            ],
+            "comment": "Build ID: ec499a6178ddbcaa2645b97548821f8d5beb35d4"
+        },
+        {
+            "fileName": "wwan.ko",
+            "SPDXID": "SPDXRef-wwan.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "6fe832be8df78b873adc6a2d24a8a02509900668"
+                }
+            ],
+            "comment": "Build ID: 820185b57265498d19bbd704c6ad8fa4ed47b8a3"
+        },
+        {
+            "fileName": "zram.ko",
+            "SPDXID": "SPDXRef-zram.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "27adba72cb05bd2b304010763a32885e9df1cc10"
+                }
+            ],
+            "comment": "Build ID: 03241da631389c4845873303e59097be5ab2c523"
+        },
+        {
+            "fileName": "zsmalloc.ko",
+            "SPDXID": "SPDXRef-zsmalloc.ko",
+            "checksums": [
+                {
+                    "algorithm": "SHA1",
+                    "checksumValue": "099120f075bcc5f89ad7c5b430277484e4b72b5c"
+                }
+            ],
+            "comment": "Build ID: 516efe196176c61bd1483ba0250692a86c9bcb91"
+        }
+    ],
+    "relationships": [
+        {
+            "spdxElementId": "SPDXRef-kernel",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-KernelSourceCode",
+            "relatedSpdxElement": "SPDXRef-LinuxUpstreamPackage",
+            "relationshipType": "VARIANT_OF"
+        },
+        {
+            "spdxElementId": "SPDXRef-6lowpan.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-8021q.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-9pnet-fd.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-9pnet.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-Image",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-Image.gz",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-Image.lz4",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-System.map",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-aqc111.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-asix.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ax88179-178a.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-bluetooth.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-boot-gz.img",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-boot-img.tar.gz",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-boot-lz4.img",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-boot.img",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-bsd-comp.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-btbcm.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-btqca.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-btsdio.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-build.config.constants",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-can-bcm.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-can-dev.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-can-gw.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-can-raw.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-can.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-cctrng.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-cdc-acm.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-cdc-eem.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-cdc-ether.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-cdc-ncm.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-clk-gate-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-clk-kunit-helpers.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-clk-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-dev-addr-lists-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-download-configs.json",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ext4-inode-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-fat-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ftdi-sio.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-gki-certification-tools.tar.gz",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-gki-info.txt",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-gnss.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-gzvm.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-hci-uart.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-hid-uclogic-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-hidp.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ieee802154-6lowpan.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ieee802154-socket.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ieee802154.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-iio-test-format.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-init-ddk.zip",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-input-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kernel-aarch64-Module.symvers",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kernel-aarch64-ddk-headers-archive.tar.gz",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kernel-aarch64-dot-config",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kernel-aarch64-filegroup-decl.tar.gz",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kernel-headers.tar.gz",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kernel-uapi-headers.tar.gz",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kheaders.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kunit-example-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kunit-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-kunit.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-l2tp-core.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-l2tp-ppp.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-lib-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-libarc4.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-mac802154.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-macsec.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-mii.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-modules.builtin",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-modules.builtin.modinfo",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-netfs.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-nfc.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-nhc-dest.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-nhc-fragment.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-nhc-hop.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-nhc-ipv6.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-nhc-mobility.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-nhc-routing.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-nhc-udp.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-of-kunit-helpers.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-open-dice.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-platform-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ppp-deflate.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ppp-generic.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ppp-mppe.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-pppox.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-pps-core.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-pptp.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ptp-kvm.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-ptp.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-pwrseq-core.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-r8152.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-r8153-ecm.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-regmap-kunit.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-regmap-ram.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-regmap-raw-ram.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-rfcomm.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-rfkill.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-rtl8150.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-slcan.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-slhc.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-soc-topology-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-soc-utils-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-system-dlkm-staging-archive.tar.gz",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-system-dlkm.erofs.img",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-system-dlkm.ext4.img",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-system-dlkm.flatten.erofs.img",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-system-dlkm.flatten.ext4.img",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-system-dlkm.modules.blocklist",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-system-dlkm.modules.load",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-test-mappings.zip",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-tests.zip",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-time-test.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-tipc-diag.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-tipc.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-tls.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-unstripped-modules.tar.gz",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-usbmon.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-usbnet.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-usbserial.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-vcan.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-vcpu-stall-detector.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-virtio-balloon.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-virtio-blk.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-virtio-console.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-virtio-pci-legacy-dev.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-virtio-pci-modern-dev.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-virtio-pci.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-vmlinux",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-vmlinux.symvers",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-vmw-vsock-virtio-transport.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-wwan.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-zram.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        },
+        {
+            "spdxElementId": "SPDXRef-zsmalloc.ko",
+            "relatedSpdxElement": "SPDXRef-KernelSourceCode",
+            "relationshipType": "GENERATED_FROM"
+        }
+    ]
+}
