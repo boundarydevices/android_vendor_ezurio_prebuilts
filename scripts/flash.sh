@@ -15,7 +15,7 @@ EOF
 }
 
 # Parse parameters
-skip_userdata=0
+wipe_userdata="-w"
 disable_verity=""
 while [ $# -gt 0 ]; do
 	case $1 in
@@ -23,7 +23,7 @@ while [ $# -gt 0 ]; do
 		-d) export ANDROID_PRODUCT_OUT=$2; shift;;
 		-D) disable_verity="--disable-verity";;
 		-p) product=$2; shift;;
-		-u) skip_userdata=1 ;;
+		-u) wipe_userdata="" ;;
 		*)  echo "$1 is not a known option";
 			help; exit;;
 	esac
@@ -33,7 +33,7 @@ done
 if [ -z "$ANDROID_PRODUCT_OUT" ]; then export ANDROID_PRODUCT_OUT=$PWD; fi
 
 fastboot flash mmc0 $ANDROID_PRODUCT_OUT/MBR_EMMC
-if ! [ $? -eq 0 ] ; then echo "Failed to flash GPT"; exit 1; fi
+if ! [ $? -eq 0 ] ; then echo "Failed to GPT"; exit 1; fi
 fastboot flash mmc0boot0 $ANDROID_PRODUCT_OUT/mtk-boot.bin
 if ! [ $? -eq 0 ] ; then echo "Failed to flash BL2"; exit 1; fi
 fastboot flash mmc0boot1 $ANDROID_PRODUCT_OUT/u-boot-env.bin
@@ -42,15 +42,22 @@ fastboot flash bootloaders $ANDROID_PRODUCT_OUT/bootloaders.img
 if ! [ $? -eq 0 ] ; then echo "Failed to flash bootloaders"; exit 1; fi
 fastboot flash persist $ANDROID_PRODUCT_OUT/persist.img
 if ! [ $? -eq 0 ] ; then echo "Failed to flash persist"; exit 1; fi
-fastboot flashall --force --skip-reboot $disable_verity
-if ! [ $? -eq 0 ] ; then echo "Failed to flash the OS, check your fastboot tool version!"; exit 1; fi
-if ! [ ${skip_userdata} -eq 1 ] ; then
-	fastboot reboot bootloader
-	fastboot erase userdata
-	if ! [ $? -eq 0 ] ; then echo "Failed to erase userdata"; exit 1; fi
-	fastboot erase metadata
-	if ! [ $? -eq 0 ] ; then echo "Failed to erase metadata"; exit 1; fi
-	fastboot erase misc
-	if ! [ $? -eq 0 ] ; then echo "Failed to erase misc"; exit 1; fi
-fi
+fastboot flash boot_a $ANDROID_PRODUCT_OUT/boot.img
+if ! [ $? -eq 0 ] ; then echo "Failed to flash boot"; exit 1; fi
+fastboot flash init_boot_a $ANDROID_PRODUCT_OUT/init_boot.img
+if ! [ $? -eq 0 ] ; then echo "Failed to flash boot"; exit 1; fi
+fastboot flash dtbo_a $ANDROID_PRODUCT_OUT/dtbo.img
+if ! [ $? -eq 0 ] ; then echo "Failed to flash boot"; exit 1; fi
+fastboot flash vendor_boot_a $ANDROID_PRODUCT_OUT/vendor_boot.img
+if ! [ $? -eq 0 ] ; then echo "Failed to flash vendor_boot"; exit 1; fi
+fastboot flash vbmeta_a $ANDROID_PRODUCT_OUT/vbmeta.img
+if ! [ $? -eq 0 ] ; then echo "Failed to flash vbmeta"; exit 1; fi
+fastboot flash vbmeta_vendor_dlkm_a $ANDROID_PRODUCT_OUT/vbmeta_vendor_dlkm.img
+if ! [ $? -eq 0 ] ; then echo "Failed to flash vbmeta_vendor_dlkm"; exit 1; fi
+fastboot flashall --force --skip-reboot $wipe_userdata $disable_verity
+if ! [ $? -eq 0 ] ; then echo "Failed to flashall"; exit 1; fi
+fastboot erase metadata
+if ! [ $? -eq 0 ] ; then echo "Failed to erase metadata"; exit 1; fi
+fastboot erase misc
+if ! [ $? -eq 0 ] ; then echo "Failed to erase misc"; exit 1; fi
 fastboot reboot
